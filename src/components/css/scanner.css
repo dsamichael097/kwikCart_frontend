@@ -1,0 +1,51 @@
+.scanner-container-pos {
+  margin-top: 20px;
+}
+
+.scanner-pos {
+  width: 250px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.line-pos {
+  margin: 0 auto;
+  width: 250px;
+  height: 2px;
+  transform: translateY(-10px);
+  background-color: blue;
+}
+
+.slide-top {
+  -webkit-animation: slide-top 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2s
+    infinite alternate-reverse;
+  animation: slide-top 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2s infinite
+    alternate-reverse;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(10);
+    transform: translateY(10);
+  }
+  100% {
+    -webkit-transform: translateY(-190px);
+    transform: translateY(-190px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(10);
+    transform: translateY(10);
+  }
+  100% {
+    -webkit-transform: translateY(-190px);
+    transform: translateY(-190px);
+  }
+}
